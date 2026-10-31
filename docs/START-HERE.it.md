@@ -48,7 +48,7 @@ codex --version
 ```
 
 Per Gemini, Claude, Grok e OpenCode trovi i collegamenti ufficiali e i passaggi in
-[PROVIDERS.md](PROVIDERS.md). I quattro adattatori aggiuntivi sono sperimentali:
+[guida ai servizi AI](PROVIDERS.it.md). I quattro adattatori aggiuntivi sono sperimentali:
 le prove automatiche simulano le loro risposte; la prova sul tuo account è necessaria.
 
 L'AI che ti aiuta a installare il progetto può essere diversa da quella che scegli

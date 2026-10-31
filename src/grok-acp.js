@@ -6,7 +6,9 @@ import { terminateTree, providerFailure } from './process.js';
 // Standard ACP: the client advertises no filesystem/terminal capabilities and
 // rejects every permission request. No subscription token is read by this app.
 export async function runGrokAcp(config, prompt, { env, cwd, spawnImpl = spawn } = {}) {
-  const child = spawnImpl(config.cliBinary, ['agent', 'stdio'], { env, cwd, shell: false, detached: process.platform !== 'win32', stdio: ['pipe', 'pipe', 'pipe'] });
+  const deny = ['Bash', 'Edit', 'Read', 'Grep', 'MCPTool', 'WebFetch', 'WebSearch'];
+  const args = [...deny.flatMap(tool => ['--deny', tool]), 'agent', 'stdio'];
+  const child = spawnImpl(config.cliBinary, args, { env, cwd, shell: false, detached: process.platform !== 'win32', stdio: ['pipe', 'pipe', 'pipe'] });
   const lines = createInterface({ input: child.stdout });
   const pending = new Map();
   let nextId = 1, text = '', size = 0, failure;

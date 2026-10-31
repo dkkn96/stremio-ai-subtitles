@@ -24,7 +24,7 @@ You must complete personal authentication, provider terms and domain ownership.
 ## Testo in italiano
 
 > Aiutami a installare questo add-on Stremio per uso personale. Leggi README.md,
-> AGENTS.md, docs/START-HERE.it.md, docs/PROVIDERS.md e docs/VALIDATION.md.
+> AGENTS.md, docs/START-HERE.it.md, docs/PROVIDERS.it.md e docs/VALIDATION.md.
 > Chiedimi la lingua, il servizio AI e i dispositivi che voglio usare. Controlla
 > il sistema operativo e i programmi già presenti, riutilizzandoli. Parti
 > dall'add-on esistente. Prepara configurazione e prove senza chiamate AI, poi

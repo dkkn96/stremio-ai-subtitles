@@ -27,7 +27,12 @@ function fixture({ permission = false, model = 'test-model', quota = false } = {
       });
     }
   });
-  return { calls, spawnImpl: () => child };
+  return { calls, spawnImpl: (_binary, args) => {
+    for (const tool of ['Bash', 'Edit', 'Read', 'Grep', 'MCPTool', 'WebFetch', 'WebSearch']) {
+      const index = args.indexOf(tool); assert.ok(index > 0); assert.equal(args[index - 1], '--deny');
+    }
+    return child;
+  } };
 }
 const config = { cliBinary: 'grok', model: 'test-model', providerTimeoutMs: 500 };
 

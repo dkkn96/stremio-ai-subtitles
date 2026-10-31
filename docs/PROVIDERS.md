@@ -79,7 +79,8 @@ It does not install clients, create accounts or enroll you in paid services.
 - To inspect available models: `npm run login -- --provider grok --interactive`,
   use its model picker, and exit. Choose that exact model in setup.
 - The adapter uses ACP with cached personal authentication, denies client tool
-  requests and confirms the selected model against the session model catalog.
+  requests, sets the documented CLI deny filters for file/shell/MCP/web tools,
+  and confirms the selected model against the session model catalog.
   It never falls back to `XAI_API_KEY`. Complete the opt-in probe.
 - The client is configured with its own `GROK_HOME`; inherited agent settings,
   compatibility scanners and updater are disabled for translation workers.

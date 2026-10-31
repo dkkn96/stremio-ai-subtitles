@@ -14,6 +14,8 @@ by the preparation process. The existing private deployment was not changed.
   using the same data directory was rejected.
 - Generated macOS launch-agent XML passed `plutil -lint`; it was not installed.
 - Release allowlist/local-document-link and secret-pattern checks passed.
+- The source ZIP was extracted to a fresh directory; offline dependency install,
+  all 68 tests, the synthetic smoke and release checks passed there too.
 - No live AI translations, new account login, paid API request, DNS mutation,
   private deployment change or GitHub push was performed.
 
