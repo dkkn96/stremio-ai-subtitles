@@ -1,0 +1,13 @@
+node_modules/
+.env
+.env.*
+!.env.example
+data/
+runtime/
+.test-data/
+*.log
+*.pem
+*.key
+*.p12
+*.zip
+.DS_Store

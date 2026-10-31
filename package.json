@@ -1,0 +1,28 @@
+{
+  "name": "stremio-ai-subtitles",
+  "version": "0.3.0",
+  "private": true,
+  "type": "module",
+  "description": "Self-hosted Stremio subtitle translation with your own AI account.",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22.12"
+  },
+  "dependencies": {
+    "proper-lockfile": "4.1.2"
+  },
+  "scripts": {
+    "start": "node --env-file-if-exists=.env src/main.js",
+    "setup": "node scripts/setup.js",
+    "doctor": "node --env-file-if-exists=.env scripts/doctor.js",
+    "login": "node --env-file-if-exists=.env scripts/login.js",
+    "probe": "node --env-file-if-exists=.env scripts/probe.js",
+    "link": "node --env-file-if-exists=.env scripts/link.js",
+    "demo": "node src/main.js --demo",
+    "test": "node --test --test-concurrency=1 test/*.test.js",
+    "smoke": "node scripts/smoke.js",
+    "check:release": "node scripts/check-release.js",
+    "service": "node scripts/service.js",
+    "resume": "node --env-file-if-exists=.env scripts/resume.js"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "AI_PROVIDER": "codex",
+  "AI_MODEL": "gpt-6-luna",
+  "SOURCE_LANGUAGE": "eng",
+  "TARGET_LANGUAGE": "hun",
+  "BATCH_SIZE": 50,
+  "BATCH_CONCURRENCY": 2,
+  "MAX_NEW_JOBS_PER_DAY": 20,
+  "ALLOW_PAID_API": "false",
+  "AI_REASONING": "max",
+  "CODEX_SERVICE_TIER": "fast"
+}
