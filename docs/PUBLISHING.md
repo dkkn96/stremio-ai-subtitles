@@ -43,9 +43,10 @@ Replace the placeholder with the real remote; do not paste access tokens into
 URLs. Authenticate through GitHub's official tooling when asked. No secret or
 AI account is required in GitHub Actions: CI uses mocks and synthetic dialogue.
 
-Check the first Actions run before tagging a release. This repository contains
-a CI definition, not evidence that GitHub has already run it. Publish as a preview
-while new provider/OS combinations remain unverified. Keep VALIDATION.md honest.
+Check the Actions run for the commit you intend to release before tagging it.
+The upstream repository's observed checks are recorded in VALIDATION.md; a fork
+must verify its own runs. Publish as a preview while new provider/OS combinations
+remain unverified. Keep VALIDATION.md honest.
 
 ## Release checklist
 

@@ -1,8 +1,8 @@
 # Validation status — 2026-10-31
 
-This is a **public preview prepared locally**, not a claim that every provider,
-platform or Stremio player has been certified. No repository has been published
-by the preparation process. The existing private deployment was not changed.
+This is a **public preview**, not a claim that every provider, platform or Stremio
+player has been certified. The [repository](https://github.com/dkkn96/stremio-ai-subtitles)
+was published on 2026-10-31. The existing private deployment was not changed.
 
 ## Observed local preparation results
 
@@ -16,11 +16,20 @@ by the preparation process. The existing private deployment was not changed.
 - Release allowlist/local-document-link and secret-pattern checks passed.
 - The source ZIP was extracted to a fresh directory; offline dependency install,
   all 68 tests, the synthetic smoke and release checks passed there too.
-- No live AI translations, new account login, paid API request, DNS mutation,
-  private deployment change or GitHub push was performed.
+- No live AI translations, new AI account login, paid API request, DNS mutation
+  or private deployment change was performed during preparation/publication.
 
-Node 22/24 and Linux runs are defined in CI but not observed yet. The checks above
-validate code/transport behavior, not native playback or live provider quality.
+## Observed GitHub checks
+
+The [first GitHub Actions run](https://github.com/dkkn96/stremio-ai-subtitles/actions/runs/41202068415)
+passed all four jobs at commit `9a32a7be8d03c2d62aa1d515a979050b3d2e28dc`:
+Ubuntu and macOS runners, each using Node 22 and 24. Every job installed the locked
+dependencies and passed the automated tests, synthetic smoke and release checks.
+The [workflow page](https://github.com/dkkn96/stremio-ai-subtitles/actions/workflows/ci.yml)
+shows results for subsequent commits.
+
+These checks validate code/transport behavior, not native playback, a complete
+end-user installation or live provider quality. No AI credentials are used in CI.
 
 ## Evidence boundaries
 
@@ -33,11 +42,11 @@ validate code/transport behavior, not native playback or live provider quality.
 | Gemini / Claude / Grok / OpenCode | Experimental adapters based on current official docs. Contract/error/permissions tests are simulated; no live account validation in this preparation. |
 | Optional API modes | Mock HTTP tests only. No API key configured and no paid request sent. |
 | macOS startup | Launch-agent generation/escaping checks; public services not installed on the development Mac, to preserve the existing deployment. Fresh-user reboot test remains required. |
-| Linux | CI job defined; actual GitHub execution and native install not yet observed. |
+| Linux | GitHub Ubuntu runner checks passed on Node 22/24. A complete end-user install, provider login and playback remain unverified. |
 | Windows | No production/native auto-start qualification. |
 | Translation quality | No new multilingual human quality evaluation. Language codes are configuration support, not quality certification. |
 | TV / iPhone | Historical private-addon tests do not qualify this public version. Test each intended player after installation. |
-| GitHub Actions | Workflow prepared; not executed on GitHub before publication. |
+| GitHub Actions | First published commit passed all four Linux/macOS, Node 22/24 jobs; see the run linked above. |
 
 The offline suite checks cache separation, cue/timing invariants, source SSRF
 protection, API opt-in, minimal client environment, quota persistence, no automatic

@@ -25,7 +25,8 @@ riapri Terminale dopo l'installazione. Prima di continuare risolvi questo passag
 
 ## 2. Scarica il progetto
 
-Nella pagina GitHub del progetto scegli **Code → Download ZIP**. Estrai lo ZIP e
+Nella [pagina GitHub del progetto](https://github.com/dkkn96/stremio-ai-subtitles)
+scegli **Code → Download ZIP**. Estrai lo ZIP e
 metti la cartella in una posizione stabile, per esempio Documenti.
 Nel Terminale scrivi `cd `, con lo spazio finale, trascina la cartella dal Finder
 nella finestra del Terminale e premi Invio. Ora esegui:

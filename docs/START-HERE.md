@@ -25,7 +25,8 @@ Terminal after installing Node. Do not proceed until both work.
 
 ## 2. Download the addon
 
-On this repository's GitHub page choose **Code → Download ZIP**, then extract it.
+On the [GitHub project page](https://github.com/dkkn96/stremio-ai-subtitles)
+choose **Code → Download ZIP**, then extract it.
 Keep the extracted folder in a stable location, for example Documents. Moving it
 later requires reinstalling the optional startup service.
 

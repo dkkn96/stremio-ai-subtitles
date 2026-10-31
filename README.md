@@ -1,10 +1,16 @@
 # Stremio AI Subtitles
 
+[![Offline checks](https://github.com/dkkn96/stremio-ai-subtitles/actions/workflows/ci.yml/badge.svg)](https://github.com/dkkn96/stremio-ai-subtitles/actions/workflows/ci.yml)
+
 **Your Stremio addon. Your AI account. Your subtitle language.**
 
 A self-hosted addon that finds source subtitles, translates them on demand and
 returns a complete SRT track to Stremio. It preserves cue timings, caches finished
 translations and limits new work. No shared translation server is provided.
+
+**Public preview:** the automated suite passes on Linux and macOS with Node 22/24.
+New provider adapters are experimental; personal login, translation quality and
+playback still need verification on your own setup. See the [validation record](docs/VALIDATION.md).
 
 [Guida italiana](docs/START-HERE.it.md) · [English setup guide](docs/START-HERE.md) ·
 [Install with an AI assistant](docs/AI-INSTALL.md) · [Provider setup](docs/PROVIDERS.md)

@@ -1,13 +1,14 @@
 # Install with your AI assistant
 
-Give your assistant this repository URL and one of the following prompts. The
+Give your assistant [this repository URL](https://github.com/dkkn96/stremio-ai-subtitles)
+and one of the following prompts. The
 assistant must have access to this repository's files; it needs terminal access
 to execute steps. A chat-only assistant must guide you without claiming execution.
 You must complete personal authentication, provider terms and domain ownership.
 
 ## Prompt in English
 
-> Help me install this Stremio subtitle addon for my own use. Read README.md,
+> Help me install https://github.com/dkkn96/stremio-ai-subtitles for my own use. Read README.md,
 > AGENTS.md, docs/START-HERE.md, docs/PROVIDERS.md and docs/VALIDATION.md first.
 > Ask which language, AI provider and playback devices I want. Inspect my OS and
 > existing tools; reuse working installations. Use the existing addon, not a new
@@ -23,7 +24,7 @@ You must complete personal authentication, provider terms and domain ownership.
 
 ## Testo in italiano
 
-> Aiutami a installare questo add-on Stremio per uso personale. Leggi README.md,
+> Aiutami a installare https://github.com/dkkn96/stremio-ai-subtitles per uso personale. Leggi README.md,
 > AGENTS.md, docs/START-HERE.it.md, docs/PROVIDERS.it.md e docs/VALIDATION.md.
 > Chiedimi la lingua, il servizio AI e i dispositivi che voglio usare. Controlla
 > il sistema operativo e i programmi già presenti, riutilizzandoli. Parti
